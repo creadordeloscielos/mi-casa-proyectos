@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fdfdfc;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1250px;
+    width: 80%;
+    margin: auto;
+}
+
+.dp-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #4D4D4D;
+}
+
+/*------------------------------------------------------------------
+                    MODIFICACION DE SLIDER
+-------------------------------------------------------------------*/
+
+.txt-slider {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    h1 {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0;
+        color: #fff;
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+
+    p {
+        color: #E6E6E6;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        padding: 5px 0px;
+
+    }
+
+}
+
+.txt-slider {
+    width: 80%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.txt-centro{
+margin-top: 50px;
+text-align: center;
+font-size: 32px;
+color: #133157;
+}
+
+.nuestro-trabajo{
+    margin: 100px auto;
+}
