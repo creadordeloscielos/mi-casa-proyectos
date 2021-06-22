@@ -13,10 +13,40 @@
         }
     }
 
+      footer {
+        .container {
+            flex-wrap: wrap;
+
+            .box {
+                width: 45%;
+                margin-bottom: 20px;
+
+            }
+        }
+
+    }
+
 }
 
 @media screen and(max-width:800px) {
 
+ 
+.experiencia{
+    .title{
+        .txt {
+            p{
+                width: 100%;
+                font: 16px;
+                }
+            }
+        }
+    .container{
+        flex-direction: column;
+        .txt{
+            width: 450px;
+            }
+        }
+    }
 /*------------------------------------------------------------------
                          NOSOTROS
 -------------------------------------------------------------------*/    
@@ -64,7 +94,7 @@
     }
 }
 
-@media screen and(max-width:730px) {
+@media screen and(max-width:830px) {
 
 /*------------------------------------------------------------------
                            HEADER
@@ -96,6 +126,7 @@
             width: 80%;
             left: -100%;
             z-index: 10;
+                    top: 78px;
         }
 
         a {
@@ -107,6 +138,51 @@
                 background: #ffffff0c;
             }
         }
+
+               
+    }
+
+.trabajo {
+    
+    .title{
+        flex-direction: column;
+        padding-bottom: 30px;
+        width: 90%;
+        margin: 0px auto;
+    
+        .txt{
+            width: 100%;
+            margin-right: 0px;
+
+            h2{
+                font-size: 22px;
+                }
+
+                    p{
+                        font-size: 16px;
+                        }
+
+                            li, i{
+                                font-size: 16px;
+                                }
+    
+            }
+        .img{
+            width: 100%;
+            }
+        }
+
+           
+    }
+
+.planos{
+    .container{
+            flex-direction: column;
+        }
+            .img, .txt{
+                width: 100%;
+                }
+
     }
 
     .mostrar {
@@ -131,7 +207,7 @@
 
 @media screen and(max-width:850px) {
 
-    /*------------------------------------------------------------------
+/*------------------------------------------------------------------
                           CONTACTO
 -------------------------------------------------------------------*/
     
@@ -175,6 +251,28 @@
             font-size: 40px;
         }
     }
+
+        .servicios {
+            .title {
+                flex-direction: column;
+                .txt{
+                    width: 100%;
+                    a{margin-bottom: 30px;
+                        
+                        }
+                    }
+                }
+            }
+
+                      .servicios {
+        .title {
+            .txt{
+                margin-right: 0px;
+                }
+            }
+        }
+
+        
 
 }
 
@@ -220,6 +318,65 @@
         }
     }
 
+         header {
+             img{
+                width: 250px;
+                }
+            }
+
+                .experiencia{
+              
+              .title {
+                   h3{
+                font-size: 24px;
+                }
+                    p{
+                        font-size: 16px;
+                        }
+                  }
+    .container{
+  
+        .txt{
+           
+         h4{
+             font-size: 18px;
+             }
+                 font-size: 14px;
+            }
+        }
+    }
+
+        .precencia {
+            .txt{
+                  h4{
+                font-size: 22px;
+                }
+                }
+
+                    .img{
+                        width: 100%;
+                        }
+          
+            }
+
+}
+
+
+    @media screen and(max-width:520px) {
+
+    /*------------------------------------------------------------------
+                          CONTACTO
+-------------------------------------------------------------------*/
+  .experiencia{
+    .container{
+      
+        .txt{
+            width: 100%;
+            }
+        }
+    }
+
+
 }
 
 @media screen and(max-width:450px) {
@@ -231,4 +388,59 @@
         width: 100%;
     }
 
+    .trabajo a{
+    
+                text-align: center;
+                width: 100%;
+             
+        }
+
+               .servicios {
+            .title {
+            
+                .txt{
+              
+                    a{
+                       text-align: center;
+                width: 100%;
+                        
+                        }
+                    }
+                }
+            }
+  
+
+
 }
+
+    @media screen and(max-width:800px) {
+
+ .txt-slider{
+     h1{
+         font-size: 30px;
+         }
+
+             p{
+                    font-size: 18px !important;
+                 }
+     
+ }
+
+        }
+
+
+
+              @media screen and(max-width:600px) {
+
+ .txt-slider{
+     h1{
+         font-size: 24px !important;
+         }
+
+             p{
+                    font-size: 15px !important;
+                 }
+     
+ }
+
+        }

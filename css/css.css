@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -24,9 +25,15 @@ li {
 }
 
 .dp-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 h1,
@@ -45,8 +52,12 @@ p {
                     MODIFICACION DE SLIDER
 -------------------------------------------------------------------*/
 .txt-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
@@ -120,6 +131,7 @@ p {
   -webkit-appearance: none;
   border-radius: 4px;
   border: none;
+  -webkit-transition: background .5s;
   transition: background .5s;
   margin-top: 10px;
   display: inline-block;
@@ -159,6 +171,7 @@ header nav a {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 18px;
+  -webkit-transition: color .5s;
   transition: color .5s;
 }
 
@@ -316,6 +329,7 @@ header img {
   -webkit-appearance: none;
   border-radius: 4px;
   border: none;
+  -webkit-transition: background .5s;
   transition: background .5s;
   margin-top: 10px;
   display: inline-block;
@@ -362,8 +376,11 @@ header img {
 
 .experiencia .container {
   margin: 50px auto;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .experiencia .container .txt {
@@ -439,6 +456,7 @@ header img {
   -webkit-appearance: none;
   border-radius: 4px;
   border: none;
+  -webkit-transition: background .5s;
   transition: background .5s;
   margin-top: 10px;
   display: inline-block;
@@ -464,7 +482,9 @@ header img {
 }
 
 .form-contact .container {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .form-contact .contact-information {
@@ -492,8 +512,12 @@ header img {
 
 .form-contact li {
   line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Poppins", Sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -537,6 +561,7 @@ header img {
   -webkit-appearance: none;
   border-radius: 4px;
   border: none;
+  -webkit-transition: background .5s;
   transition: background .5s;
 }
 
@@ -596,42 +621,66 @@ br {
 }
 
 footer {
-  background: #0c2239;
-  padding-top: 35px;
-}
-
-footer .container {
-  align-items: flex-start;
-  padding-bottom: 35px;
-}
-
-footer li {
+  background: #252525;
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.8;
-  display: flex;
-  color: #ffffff;
 }
 
-footer ul li:first-child {
-  font-size: 19px;
-  font-weight: 500;
-  padding-bottom: 4px;
-  color: #ffffff;
-}
-
-footer a {
-  font-size: 15px;
-  color: #ffffff;
-}
-
-footer br {
+footer .br {
   display: block;
 }
 
+footer .wrapper {
+  padding: 30px 0px;
+}
+
+footer .dp-flex {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+  font-weight: 300;
+}
+
 footer i {
-  margin-right: 6px;
+  font-size: 18px;
+  margin-right: 5px;
+  font-weight: 100;
+  color: #ff6e05;
+}
+
+footer img {
+  width: 220px;
+  margin-right: 15px;
+}
+
+footer ul li:first-child {
+  margin-bottom: 8px;
+  font-size: 18px;
+  border-bottom: 1px solid #ff6e05;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+footer .info {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 74%;
+}
+
+footer a {
+  color: white;
+  font-weight: 100;
 }
 
 .pie {
@@ -680,7 +729,9 @@ footer i {
 }
 
 .fortaleszas .container {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .fortaleszas .txt {
@@ -722,7 +773,9 @@ footer i {
 }
 
 .valores .container {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .valores .container-txt {
@@ -796,14 +849,38 @@ footer i {
   .banner h2 {
     font-size: 50px;
   }
+  footer .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .container .box {
+    width: 45%;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .experiencia .title .txt p {
+    width: 100%;
+    font: 16px;
+  }
+  .experiencia .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experiencia .container .txt {
+    width: 450px;
+  }
   /*------------------------------------------------------------------
                          NOSOTROS
 -------------------------------------------------------------------*/
   .nosotros .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .nosotros .container .txt {
     width: 100%;
@@ -816,7 +893,10 @@ footer i {
     margin: 0px auto;
   }
   .fortaleszas .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .fortaleszas .txt {
     width: 100%;
@@ -834,7 +914,7 @@ footer i {
   width: 100%;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 830px) {
   /*------------------------------------------------------------------
                            HEADER
 -------------------------------------------------------------------*/
@@ -855,12 +935,14 @@ footer i {
     overflow: hidden;
   }
   header nav {
+    -webkit-transition: .8s all ease-in-out;
     transition: .8s all ease-in-out;
     position: absolute;
     height: 100%;
     width: 80%;
     left: -100%;
     z-index: 10;
+    top: 78px;
   }
   header a {
     text-align: center;
@@ -870,6 +952,40 @@ footer i {
   header a:hover {
     background: #ffffff0c;
   }
+  .trabajo .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 30px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .trabajo .title .txt {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .trabajo .title .txt h2 {
+    font-size: 22px;
+  }
+  .trabajo .title .txt p {
+    font-size: 16px;
+  }
+  .trabajo .title .txt li, .trabajo .title .txt i {
+    font-size: 16px;
+  }
+  .trabajo .title .img {
+    width: 100%;
+  }
+  .planos .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .planos .img, .planos .txt {
+    width: 100%;
+  }
   .mostrar {
     left: 0;
     background: #133157;
@@ -878,7 +994,10 @@ footer i {
                          NOSOTROS
 -------------------------------------------------------------------*/
   .valores .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .valores .txt {
     width: 100%;
@@ -890,7 +1009,10 @@ footer i {
                           CONTACTO
 -------------------------------------------------------------------*/
   .form-contact .container {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .form-contact .form {
     width: 100%;
@@ -902,9 +1024,14 @@ footer i {
     display: block;
   }
   .contact-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100% !important;
     margin-left: 0 !important;
   }
@@ -917,6 +1044,21 @@ footer i {
   }
   .banner h2 {
     font-size: 40px;
+  }
+  .servicios .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .servicios .title .txt {
+    width: 100%;
+  }
+  .servicios .title .txt a {
+    margin-bottom: 30px;
+  }
+  .servicios .title .txt {
+    margin-right: 0px;
   }
 }
 
@@ -931,10 +1073,15 @@ footer i {
     display: block;
   }
   .form-contact li {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .form-50 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .form-50 .form-group {
     width: 100%;
@@ -943,10 +1090,43 @@ footer i {
     display: none;
   }
   footer .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer .box {
     margin-top: 10px;
+  }
+  header img {
+    width: 250px;
+  }
+  .experiencia .title h3 {
+    font-size: 24px;
+  }
+  .experiencia .title p {
+    font-size: 16px;
+  }
+  .experiencia .container .txt {
+    font-size: 14px;
+  }
+  .experiencia .container .txt h4 {
+    font-size: 18px;
+  }
+  .precencia .txt h4 {
+    font-size: 22px;
+  }
+  .precencia .img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  /*------------------------------------------------------------------
+                          CONTACTO
+-------------------------------------------------------------------*/
+  .experiencia .container .txt {
+    width: 100%;
   }
 }
 
@@ -957,4 +1137,31 @@ footer i {
   input[type=submit] {
     width: 100%;
   }
+  .trabajo a {
+    text-align: center;
+    width: 100%;
+  }
+  .servicios .title .txt a {
+    text-align: center;
+    width: 100%;
+  }
 }
+
+@media screen and (max-width: 800px) {
+  .txt-slider h1 {
+    font-size: 30px;
+  }
+  .txt-slider p {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .txt-slider h1 {
+    font-size: 24px !important;
+  }
+  .txt-slider p {
+    font-size: 15px !important;
+  }
+}
+/*# sourceMappingURL=css.css.map */
